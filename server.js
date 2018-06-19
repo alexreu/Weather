@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname+'/index.html');
 })
 
-app.get('/test', function (req, res) {
+app.get('/weather', function (req, res) {
     weather.weather(function(data){
         res.send(data);
     })

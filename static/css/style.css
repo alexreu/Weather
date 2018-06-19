@@ -1,0 +1,12 @@
+.card-body{
+    background: url("../img/img.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s linear;
+}
+.card-body:hover{
+    transform: scale(1.1);
+}
+p {
+    font-size: 30px;
+}
