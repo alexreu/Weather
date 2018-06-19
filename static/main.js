@@ -3,12 +3,9 @@ $(function(){
     $.ajax({
         url: url,
         success: function (data) {
-            console.log(data.list[0].name);
-            console.log(data.list[1].name);
-            console.log(data.list[2].name);
-            console.log(data.list[3].name);
-            data.forEach(function(datas){
-                $('#result').append('<p>'+data.list.name+'</p>');
+            data.list.forEach(function(datas){
+                console.log(datas);
+                $('#result').append('<p>'+ datas.name + ' ' + datas.main.temp + ' C° </p>');
             });
         }
     });
