@@ -1,5 +1,6 @@
 $(function(){
-    var url = 'http://localhost:3012/weather';
+    let url;
+    url = 'http://localhost:3012/weather';
     $.ajax({
         url: url,
         success: function (data) {
